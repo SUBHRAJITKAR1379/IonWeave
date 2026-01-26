@@ -67,7 +67,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold gradient-text">Aether-Web</span>
+              <span className="text-xl font-bold gradient-text">AtmosAether</span>
             </div>
             <div className="hidden md:flex space-x-8">
               {['home', 'problem', 'technology', 'how-it-works', 'implementation', 'impact', 'vision', 'contact'].map(section => (
@@ -96,7 +96,7 @@ function App() {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" data-testid="hero-title">
-            Project <span className="gradient-text">Aether-Web</span>
+            <span className="gradient-text">AtmosAether</span>
           </h1>
           <p className="text-2xl md:text-3xl font-light mb-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
             Ionized Atmospheric Harvester
@@ -448,7 +448,7 @@ function App() {
             <div className="gradient-border rounded-lg p-8">
               <h3 className="text-2xl font-semibold mb-4 text-center">Our 2035 Goal</h3>
               <p className="text-xl text-gray-300 text-center leading-relaxed">
-                Deploy 10,000+ Aether-Web units globally, creating a networked atmospheric purification system that actively reverses urban air pollution and contributes to global climate stabilization.
+                Deploy 10,000+ AtmosAether units globally, creating a networked atmospheric purification system that actively reverses urban air pollution and contributes to global climate stabilization.
               </p>
             </div>
           </div>
@@ -586,7 +586,7 @@ function App() {
                   required
                   rows="5"
                   className="w-full px-4 py-3 bg-dark-bg border border-accent-blue/30 rounded-lg focus:outline-none focus:border-accent-blue transition-colors resize-none"
-                  placeholder="Tell us about your interest in Project Aether-Web..."
+                  placeholder="Tell us about your interest in AtmosAether..."
                   data-testid="contact-input-message"
                 ></textarea>
               </div>
@@ -616,7 +616,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-dark-card/50 py-12 px-4 sm:px-6 lg:px-8 border-t border-accent-blue/20" data-testid="footer">
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-2xl font-bold gradient-text mb-4">Project Aether-Web</h3>
+          <h3 className="text-2xl font-bold gradient-text mb-4">AtmosAether</h3>
           <p className="text-gray-400 mb-6">
             Innovating for a cleaner, healthier atmosphere
           </p>
@@ -627,7 +627,7 @@ function App() {
             <a href="#contact" className="text-gray-400 hover:text-accent-blue transition-colors">Contact</a>
           </div>
           <p className="text-gray-500 text-sm">
-            © 2025 Project Aether-Web. All rights reserved.
+            © 2025 AtmosAether. All rights reserved.
           </p>
         </div>
       </footer>
