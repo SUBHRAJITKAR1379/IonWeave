@@ -1,4 +1,4 @@
-# Project Aether-Web: Ionized Atmospheric Harvester
+# Project AtmosAether: Ionized Atmospheric Harvester
 
 A modern, responsive website showcasing revolutionary atmospheric purification technology.
 
@@ -106,7 +106,7 @@ sudo supervisorctl restart all
 ### Health Check
 ```
 GET /api/health
-Response: { "status": "healthy", "service": "Project Aether-Web API" }
+Response: { "status": "healthy", "service": "AtmosAether API" }
 ```
 
 ### Contact Form Submission
@@ -185,7 +185,7 @@ Update content directly in `/app/frontend/src/App.js`
 
 ## 📄 License
 
-This project is created for Project Aether-Web innovation showcase.
+This project is created for AtmosAether innovation showcase.
 
 ## 👥 Contact
 

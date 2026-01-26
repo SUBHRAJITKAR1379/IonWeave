@@ -5,7 +5,7 @@ from pymongo import MongoClient
 import os
 from datetime import datetime
 
-app = FastAPI(title="Project Aether-Web API")
+app = FastAPI(title="AtmosAether API")
 
 # CORS Configuration
 app.add_middleware(
@@ -30,7 +30,7 @@ class ContactForm(BaseModel):
 
 @app.get("/api/health")
 async def health_check():
-    return {"status": "healthy", "service": "Project Aether-Web API"}
+    return {"status": "healthy", "service": "AtmosAether API"}
 
 @app.post("/api/contact")
 async def submit_contact(contact: ContactForm):
