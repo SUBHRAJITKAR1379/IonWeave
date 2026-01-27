@@ -17,9 +17,13 @@ app.add_middleware(
 )
 
 # MongoDB Connection
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/aether_web")
+MONGO_URL = os.getenv("MONGO_URL")
+if not MONGO_URL:
+    raise ValueError("MONGO_URL environment variable is required")
 client = MongoClient(MONGO_URL)
-db = client.get_database()
+# Extract database name from MONGO_URL or default to aether_web
+db_name = MONGO_URL.split('/')[-1] if '/' in MONGO_URL else 'aether_web'
+db = client[db_name]
 
 # Pydantic Models
 class ContactForm(BaseModel):
