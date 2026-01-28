@@ -63,10 +63,15 @@ function App() {
   return (
     <div className="min-h-screen bg-dark-bg">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-dark-bg/95 backdrop-blur-sm z-50 border-b border-accent-blue/20" data-testid="main-navigation">
+      <nav className="nav-dynamic fixed top-0 w-full z-50" data-testid="main-navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent-blue to-accent-teal flex items-center justify-center animate-spin-slow">
+                <div className="w-8 h-8 rounded-full bg-dark-bg flex items-center justify-center">
+                  <span className="text-lg">🌪️</span>
+                </div>
+              </div>
               <span className="text-xl font-bold gradient-text">AtmosAether</span>
             </div>
             <div className="hidden md:flex space-x-8">
