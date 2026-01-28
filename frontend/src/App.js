@@ -288,6 +288,161 @@ function App() {
         </div>
       </section>
 
+      {/* Google Technologies Section */}
+      <section id="google-tech" className="py-20 px-4 sm:px-6 lg:px-8 section-bg-dynamic relative overflow-hidden" data-testid="google-tech-section">
+        {/* Animated Background */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-green-500/10 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="section-fade-in text-center mb-16">
+            <div className="flex justify-center mb-6">
+              <div className="flex items-center gap-4 glass-effect px-6 py-3 rounded-full">
+                <span className="text-4xl">🔧</span>
+                <span className="text-sm font-semibold text-accent-blue">Powered by Google</span>
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Google <span className="gradient-text">Technologies</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              Leveraging cutting-edge Google Cloud and AI technologies to optimize atmospheric purification at scale
+            </p>
+          </div>
+
+          {/* Google Technologies Grid */}
+          <div className="grid md:grid-cols-5 gap-6 mb-16 section-fade-in">
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift card-3d card-dynamic" data-testid="tech-gcp">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-depth">
+                <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.19 2.38a9.344 9.344 0 0 1 9.434 9.417 9.344 9.344 0 0 1-9.417 9.434A9.344 9.344 0 0 1 2.79 11.812 9.344 9.344 0 0 1 12.19 2.38zm-.885 14.935a5.45 5.45 0 0 0 5.446-5.446 5.45 5.45 0 0 0-5.446-5.445 5.45 5.45 0 0 0-5.445 5.445 5.45 5.45 0 0 0 5.445 5.446z"/>
+                </svg>
+              </div>
+              <h3 className="font-bold mb-2 text-white">Google Cloud Platform</h3>
+              <p className="text-xs text-gray-400">Infrastructure & Compute</p>
+            </div>
+
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift card-3d card-dynamic" data-testid="tech-tensorflow">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-depth">
+                <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm0 1.73l8.892 5.135v10.27L12 22.27l-8.892-5.135V6.865L12 1.73z"/>
+                </svg>
+              </div>
+              <h3 className="font-bold mb-2 text-white">TensorFlow Lite</h3>
+              <p className="text-xs text-gray-400">Edge AI Models</p>
+            </div>
+
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift card-3d card-dynamic" data-testid="tech-earth">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-depth">
+                <span className="text-4xl">🌍</span>
+              </div>
+              <h3 className="font-bold mb-2 text-white">Earth Engine</h3>
+              <p className="text-xs text-gray-400">Geospatial Analysis</p>
+            </div>
+
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift card-3d card-dynamic" data-testid="tech-iot">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-depth">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 002 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-bold mb-2 text-white">Cloud IoT</h3>
+              <p className="text-xs text-gray-400">Device Management</p>
+            </div>
+
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift card-3d card-dynamic" data-testid="tech-firebase">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center shadow-depth">
+                <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z"/>
+                </svg>
+              </div>
+              <h3 className="font-bold mb-2 text-white">Firebase</h3>
+              <p className="text-xs text-gray-400">Real-time Data</p>
+            </div>
+          </div>
+
+          {/* Google AI Tools */}
+          <div className="section-fade-in">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 glass-effect px-4 py-2 rounded-full mb-4">
+                <span className="text-2xl">🤖</span>
+                <span className="text-sm font-semibold gradient-text">AI-Powered Intelligence</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                Google <span className="gradient-text">AI Tools</span> Integrated
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="gradient-border rounded-2xl p-8 glass-effect hover-lift card-dynamic shimmer" data-testid="ai-tensorflow">
+                <div className="flex items-start gap-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center flex-shrink-0 pulse-glow">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm0 1.73l8.892 5.135v10.27L12 22.27l-8.892-5.135V6.865L12 1.73z"/>
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-2xl font-bold mb-3 gradient-text">TensorFlow Lite</h4>
+                    <p className="text-gray-300 mb-4 leading-relaxed">
+                      Edge AI optimization for real-time air quality prediction and system performance tuning directly on IoT devices
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs font-semibold">Edge Computing</span>
+                      <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs font-semibold">ML Models</span>
+                      <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs font-semibold">Real-time Processing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="gradient-border rounded-2xl p-8 glass-effect hover-lift card-dynamic shimmer" data-testid="ai-earth-engine">
+                <div className="flex items-start gap-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 pulse-glow" style={{animationDelay: '0.5s'}}>
+                    <span className="text-4xl">🛰️</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-2xl font-bold mb-3 gradient-text">Google Earth Engine</h4>
+                    <p className="text-gray-300 mb-4 leading-relaxed">
+                      Geospatial analysis and deployment planning using satellite imagery to identify optimal unit placement zones
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs font-semibold">Satellite Data</span>
+                      <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs font-semibold">Geospatial AI</span>
+                      <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs font-semibold">Planning</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Integration Benefits */}
+          <div className="mt-16 section-fade-in">
+            <div className="gradient-border rounded-2xl p-8 glass-effect">
+              <h3 className="text-2xl font-bold mb-6 text-center gradient-text">Integration Benefits</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-4xl mb-3">⚡</div>
+                  <h4 className="font-semibold text-accent-blue mb-2">Real-time Processing</h4>
+                  <p className="text-sm text-gray-400">Sub-second AI inference at the edge</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-3">🎯</div>
+                  <h4 className="font-semibold text-accent-teal mb-2">Smart Deployment</h4>
+                  <p className="text-sm text-gray-400">AI-optimized unit placement</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-3">📊</div>
+                  <h4 className="font-semibold text-accent-blue mb-2">Scalable Infrastructure</h4>
+                  <p className="text-sm text-gray-400">Cloud-native architecture</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20 px-4 sm:px-6 lg:px-8" data-testid="how-it-works-section">
         <div className="max-w-6xl mx-auto">
