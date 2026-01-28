@@ -75,7 +75,7 @@ function App() {
               <span className="text-xl font-bold gradient-text">AtmosAether</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              {['home', 'problem', 'technology', 'how-it-works', 'implementation', 'impact', 'vision', 'contact'].map(section => (
+              {['home', 'problem', 'technology', 'google-tech', 'how-it-works', 'implementation', 'impact', 'vision', 'contact'].map(section => (
                 <button
                   key={section}
                   onClick={() => handleScroll(section)}
