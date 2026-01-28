@@ -172,53 +172,53 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 section-fade-in">
-            <div className="text-center" data-testid="tech-feature-ionization">
-              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-3xl pulse-glow">
+            <div className="text-center card-3d hover-lift" data-testid="tech-feature-ionization">
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-4xl pulse-glow number-badge-3d">
                 ⚡
               </div>
-              <h3 className="text-xl font-semibold mb-3">Advanced Ionization</h3>
+              <h3 className="text-xl font-semibold mb-3 gradient-text">Advanced Ionization</h3>
               <p className="text-gray-400">
                 Proprietary multi-stage ionization system that charges and captures pollutants at molecular level
               </p>
             </div>
             
-            <div className="text-center" data-testid="tech-feature-harvesting">
-              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-3xl pulse-glow" style={{animationDelay: '0.3s'}}>
+            <div className="text-center card-3d hover-lift" data-testid="tech-feature-harvesting">
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-4xl pulse-glow number-badge-3d" style={{animationDelay: '0.3s'}}>
                 🌪️
               </div>
-              <h3 className="text-xl font-semibold mb-3">Atmospheric Harvesting</h3>
+              <h3 className="text-xl font-semibold mb-3 gradient-text">Atmospheric Harvesting</h3>
               <p className="text-gray-400">
                 Large-scale air intake systems with minimal energy consumption using natural convection patterns
               </p>
             </div>
             
-            <div className="text-center" data-testid="tech-feature-filtration">
-              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-3xl pulse-glow" style={{animationDelay: '0.6s'}}>
+            <div className="text-center card-3d hover-lift" data-testid="tech-feature-filtration">
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-4xl pulse-glow number-badge-3d" style={{animationDelay: '0.6s'}}>
                 🔬
               </div>
-              <h3 className="text-xl font-semibold mb-3">Molecular Filtration</h3>
+              <h3 className="text-xl font-semibold mb-3 gradient-text">Molecular Filtration</h3>
               <p className="text-gray-400">
                 Nano-engineered filter matrices that trap and neutralize PM2.5, VOCs, and greenhouse gases
               </p>
             </div>
           </div>
 
-          <div className="gradient-border rounded-lg p-8 section-fade-in" data-testid="tech-specifications">
-            <h3 className="text-2xl font-semibold mb-6 text-center">Technical Specifications</h3>
+          <div className="gradient-border rounded-xl p-8 section-fade-in glass-effect hover-lift" data-testid="tech-specifications">
+            <h3 className="text-2xl font-semibold mb-6 text-center gradient-text">Technical Specifications</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <div>
+              <div className="glass-effect p-4 rounded-lg hover-lift">
                 <h4 className="text-accent-blue font-semibold mb-2">Filtration Capacity</h4>
                 <p className="text-gray-300">10,000+ cubic meters per hour per unit</p>
               </div>
-              <div>
+              <div className="glass-effect p-4 rounded-lg hover-lift">
                 <h4 className="text-accent-blue font-semibold mb-2">Energy Efficiency</h4>
                 <p className="text-gray-300">85% reduction vs traditional systems</p>
               </div>
-              <div>
+              <div className="glass-effect p-4 rounded-lg hover-lift">
                 <h4 className="text-accent-teal font-semibold mb-2">Particle Capture Rate</h4>
                 <p className="text-gray-300">99.7% for PM2.5 and smaller particles</p>
               </div>
-              <div>
+              <div className="glass-effect p-4 rounded-lg hover-lift">
                 <h4 className="text-accent-teal font-semibold mb-2">Operating Range</h4>
                 <p className="text-gray-300">-40°C to 50°C in all weather conditions</p>
               </div>
