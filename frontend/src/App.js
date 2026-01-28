@@ -848,6 +848,9 @@ function App() {
           </p>
         </div>
       </footer>
+
+      {/* Floating Chat Button */}
+      <FloatingChatButton />
     </div>
   );
 }
