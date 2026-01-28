@@ -86,32 +86,80 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 section-perspective" data-testid="hero-section">
-        <div className="hero-image absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1680225695622-1c088b1db081?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwY2l0eSUyMGNsZWFuJTIwYWlyfGVufDB8fHx8MTc2OTQwNzUyMHww&ixlib=rb-4.1.0&q=85" 
-            alt="Clean city future" 
-            className="w-full h-full object-cover"
-          />
+      <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 section-perspective overflow-hidden" data-testid="hero-section">
+        {/* Dynamic Animated Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-card to-dark-bg">
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent-blue rounded-full filter blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-teal rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+            <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          </div>
+          {/* Animated Grid */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         </div>
+        
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center parallax-layer">
-          <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-fade-in text-3d" data-testid="hero-title">
+          <div className="mb-8 flex justify-center">
+            <div className="w-32 h-32 relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-blue to-accent-teal rounded-full animate-spin-slow opacity-50"></div>
+              <div className="absolute inset-2 bg-dark-bg rounded-full flex items-center justify-center">
+                <span className="text-6xl">🌪️</span>
+              </div>
+            </div>
+          </div>
+          
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in text-3d" data-testid="hero-title">
             <span className="gradient-text">AtmosAether</span>
           </h1>
-          <p className="text-2xl md:text-4xl font-light mb-4 animate-fade-in glow-effect" style={{animationDelay: '0.2s'}}>
+          <p className="text-3xl md:text-4xl font-light mb-4 animate-fade-in glow-effect" style={{animationDelay: '0.2s'}}>
             Ionized Atmospheric Harvester
           </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in glass-effect px-6 py-4 rounded-xl" style={{animationDelay: '0.4s'}}>
+          <div className="flex justify-center gap-2 mb-8 animate-fade-in" style={{animationDelay: '0.3s'}}>
+            <div className="h-1 w-12 bg-accent-blue rounded-full"></div>
+            <div className="h-1 w-12 bg-accent-teal rounded-full"></div>
+            <div className="h-1 w-12 bg-accent-blue rounded-full"></div>
+          </div>
+          <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in glass-effect px-8 py-6 rounded-2xl" style={{animationDelay: '0.4s'}}>
             Revolutionary technology for purifying urban atmospheres through advanced ionization and molecular filtration
           </p>
-          <button 
-            onClick={() => handleScroll('problem')}
-            className="button-3d bg-gradient-to-r from-accent-blue to-accent-teal text-white px-10 py-5 rounded-xl font-semibold text-lg animate-fade-in"
-            style={{animationDelay: '0.6s'}}
-            data-testid="hero-cta-button"
-          >
-            Discover the Innovation
-          </button>
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <button 
+              onClick={() => handleScroll('problem')}
+              className="button-3d bg-gradient-to-r from-accent-blue to-accent-teal text-white px-10 py-5 rounded-xl font-semibold text-lg"
+              data-testid="hero-cta-button"
+            >
+              Discover the Innovation
+            </button>
+            <button 
+              onClick={() => handleScroll('contact')}
+              className="button-3d glass-effect border-2 border-accent-blue text-white px-10 py-5 rounded-xl font-semibold text-lg hover:bg-accent-blue/20"
+            >
+              Get In Touch
+            </button>
+          </div>
+          
+          {/* Floating Stats */}
+          <div className="grid grid-cols-3 gap-6 mt-16 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.8s'}}>
+            <div className="glass-effect rounded-xl p-4 hover-lift">
+              <div className="text-3xl font-bold gradient-text">99.7%</div>
+              <div className="text-xs text-gray-400 mt-1">Filtration Rate</div>
+            </div>
+            <div className="glass-effect rounded-xl p-4 hover-lift">
+              <div className="text-3xl font-bold gradient-text">85%</div>
+              <div className="text-xs text-gray-400 mt-1">Energy Efficient</div>
+            </div>
+            <div className="glass-effect rounded-xl p-4 hover-lift">
+              <div className="text-3xl font-bold gradient-text">50km²</div>
+              <div className="text-xs text-gray-400 mt-1">Coverage Area</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-accent-blue rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-accent-blue rounded-full mt-2 animate-pulse"></div>
+          </div>
         </div>
       </section>
 
