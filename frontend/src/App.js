@@ -530,7 +530,7 @@ function App() {
             </p>
           </div>
 
-          <div className="gradient-border rounded-lg p-8 section-fade-in">
+          <div className="gradient-border rounded-xl p-8 section-fade-in glass-effect">
             <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name *</label>
@@ -541,7 +541,7 @@ function App() {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-dark-bg border border-accent-blue/30 rounded-lg focus:outline-none focus:border-accent-blue transition-colors"
+                  className="input-3d w-full px-4 py-3 rounded-lg focus:outline-none transition-all"
                   placeholder="Your full name"
                   data-testid="contact-input-name"
                 />
@@ -556,7 +556,7 @@ function App() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-dark-bg border border-accent-blue/30 rounded-lg focus:outline-none focus:border-accent-blue transition-colors"
+                  className="input-3d w-full px-4 py-3 rounded-lg focus:outline-none transition-all"
                   placeholder="your.email@example.com"
                   data-testid="contact-input-email"
                 />
@@ -570,7 +570,7 @@ function App() {
                   name="organization"
                   value={formData.organization}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-dark-bg border border-accent-blue/30 rounded-lg focus:outline-none focus:border-accent-blue transition-colors"
+                  className="input-3d w-full px-4 py-3 rounded-lg focus:outline-none transition-all"
                   placeholder="Company or institution (optional)"
                   data-testid="contact-input-organization"
                 />
@@ -585,7 +585,7 @@ function App() {
                   onChange={handleInputChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 bg-dark-bg border border-accent-blue/30 rounded-lg focus:outline-none focus:border-accent-blue transition-colors resize-none"
+                  className="input-3d w-full px-4 py-3 rounded-lg focus:outline-none resize-none transition-all"
                   placeholder="Tell us about your interest in AtmosAether..."
                   data-testid="contact-input-message"
                 ></textarea>
@@ -593,7 +593,7 @@ function App() {
 
               {formStatus.message && (
                 <div 
-                  className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-accent-teal/20 text-accent-teal' : 'bg-red-500/20 text-red-400'}`}
+                  className={`p-4 rounded-xl glass-effect ${formStatus.type === 'success' ? 'border-2 border-accent-teal text-accent-teal' : 'border-2 border-red-400 text-red-400'}`}
                   data-testid="contact-form-status"
                 >
                   {formStatus.message}
@@ -603,7 +603,7 @@ function App() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-accent-blue to-accent-teal text-white py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-accent-blue/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="button-3d w-full bg-gradient-to-r from-accent-blue to-accent-teal text-white py-4 rounded-xl font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 data-testid="contact-submit-button"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
