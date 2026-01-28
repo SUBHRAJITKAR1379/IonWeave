@@ -2,6 +2,9 @@
 
 A modern, responsive website showcasing revolutionary atmospheric purification technology.
 
+## 🚀 NEW: WhatsApp Integration
+Contact form submissions are now automatically sent to WhatsApp! All inquiries will be delivered to **+917992745514** in real-time. [Setup Guide](WHATSAPP_QUICKSTART.md)
+
 ## 🌟 Features
 
 - **Dark Theme Design**: Professional dark theme with blue/teal accents
