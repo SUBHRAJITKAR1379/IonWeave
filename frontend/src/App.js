@@ -238,56 +238,56 @@ function App() {
           </div>
 
           <div className="space-y-8 section-fade-in">
-            <div className="flex flex-col md:flex-row items-center gap-8" data-testid="step-1">
+            <div className="flex flex-col md:flex-row items-center gap-8 step-card-3d" data-testid="step-1">
               <div className="md:w-1/4 text-center">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-4xl font-bold">
+                <div className="w-28 h-28 mx-auto bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-5xl font-bold number-badge-3d glow-effect">
                   1
                 </div>
               </div>
-              <div className="md:w-3/4 gradient-border rounded-lg p-6 hover-lift">
-                <h3 className="text-2xl font-semibold mb-3">Air Intake & Pre-filtration</h3>
+              <div className="md:w-3/4 gradient-border rounded-xl p-6 hover-lift glass-effect">
+                <h3 className="text-2xl font-semibold mb-3 gradient-text">Air Intake & Pre-filtration</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Polluted air is drawn into the system through strategically positioned intake vents. Large particulates are removed through mechanical pre-filters, optimizing the ionization process.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8" data-testid="step-2">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 step-card-3d" data-testid="step-2">
               <div className="md:w-1/4 text-center">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-accent-teal to-accent-blue rounded-full flex items-center justify-center text-4xl font-bold">
+                <div className="w-28 h-28 mx-auto bg-gradient-to-br from-accent-teal to-accent-blue rounded-full flex items-center justify-center text-5xl font-bold number-badge-3d glow-effect">
                   2
                 </div>
               </div>
-              <div className="md:w-3/4 gradient-border rounded-lg p-6 hover-lift">
-                <h3 className="text-2xl font-semibold mb-3">Ionization Chamber</h3>
+              <div className="md:w-3/4 gradient-border rounded-xl p-6 hover-lift glass-effect">
+                <h3 className="text-2xl font-semibold mb-3 gradient-text">Ionization Chamber</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Air passes through high-voltage ionization chambers where pollutant molecules receive an electrical charge, making them magnetically attracted to collection plates.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8" data-testid="step-3">
+            <div className="flex flex-col md:flex-row items-center gap-8 step-card-3d" data-testid="step-3">
               <div className="md:w-1/4 text-center">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-4xl font-bold">
+                <div className="w-28 h-28 mx-auto bg-gradient-to-br from-accent-blue to-accent-teal rounded-full flex items-center justify-center text-5xl font-bold number-badge-3d glow-effect">
                   3
                 </div>
               </div>
-              <div className="md:w-3/4 gradient-border rounded-lg p-6 hover-lift">
-                <h3 className="text-2xl font-semibold mb-3">Molecular Capture & Neutralization</h3>
+              <div className="md:w-3/4 gradient-border rounded-xl p-6 hover-lift glass-effect">
+                <h3 className="text-2xl font-semibold mb-3 gradient-text">Molecular Capture & Neutralization</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Ionized particles are captured on nano-engineered filter matrices. Chemical neutralization processes break down harmful compounds into harmless substances.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8" data-testid="step-4">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 step-card-3d" data-testid="step-4">
               <div className="md:w-1/4 text-center">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-accent-teal to-accent-blue rounded-full flex items-center justify-center text-4xl font-bold">
+                <div className="w-28 h-28 mx-auto bg-gradient-to-br from-accent-teal to-accent-blue rounded-full flex items-center justify-center text-5xl font-bold number-badge-3d glow-effect">
                   4
                 </div>
               </div>
-              <div className="md:w-3/4 gradient-border rounded-lg p-6 hover-lift">
-                <h3 className="text-2xl font-semibold mb-3">Clean Air Release</h3>
+              <div className="md:w-3/4 gradient-border rounded-xl p-6 hover-lift glass-effect">
+                <h3 className="text-2xl font-semibold mb-3 gradient-text">Clean Air Release</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Purified air is released back into the atmosphere, enriched with negative ions that promote respiratory health. Continuous monitoring ensures optimal air quality output.
                 </p>
