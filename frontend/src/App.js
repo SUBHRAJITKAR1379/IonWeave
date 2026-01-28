@@ -219,8 +219,12 @@ function App() {
       </section>
 
       {/* Core Technology Section */}
-      <section id="technology" className="py-20 px-4 sm:px-6 lg:px-8 bg-dark-card/30" data-testid="technology-section">
-        <div className="max-w-6xl mx-auto">
+      <section id="technology" className="py-20 px-4 sm:px-6 lg:px-8 bg-dark-card/30 relative overflow-hidden" data-testid="technology-section">
+        {/* Animated Background */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-blue/5 rounded-full filter blur-3xl"></div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="section-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
               Core <span className="gradient-text">Technology</span>
