@@ -169,8 +169,12 @@ function App() {
       </section>
 
       {/* Problem Section */}
-      <section id="problem" className="py-20 px-4 sm:px-6 lg:px-8" data-testid="problem-section">
-        <div className="max-w-6xl mx-auto">
+      <section id="problem" className="py-20 px-4 sm:px-6 lg:px-8 section-bg-dynamic relative overflow-hidden" data-testid="problem-section">
+        {/* Animated Background Elements */}
+        <div className="absolute top-10 right-10 w-64 h-64 bg-accent-blue/10 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 left-10 w-64 h-64 bg-accent-teal/10 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="section-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
               The <span className="gradient-text">Problem</span>
