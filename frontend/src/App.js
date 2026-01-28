@@ -414,20 +414,20 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 section-fade-in">
-            <div className="gradient-border rounded-lg p-6 text-center hover-lift" data-testid="stat-air-quality">
-              <div className="text-4xl font-bold gradient-text mb-2">95%</div>
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift stat-card-3d" data-testid="stat-air-quality">
+              <div className="text-5xl font-bold gradient-text mb-2 text-3d">95%</div>
               <p className="text-gray-300">Air Quality Improvement</p>
             </div>
-            <div className="gradient-border rounded-lg p-6 text-center hover-lift" data-testid="stat-energy">
-              <div className="text-4xl font-bold gradient-text mb-2">85%</div>
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift stat-card-3d" data-testid="stat-energy">
+              <div className="text-5xl font-bold gradient-text mb-2 text-3d">85%</div>
               <p className="text-gray-300">Energy Efficiency</p>
             </div>
-            <div className="gradient-border rounded-lg p-6 text-center hover-lift" data-testid="stat-coverage">
-              <div className="text-4xl font-bold gradient-text mb-2">50km²</div>
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift stat-card-3d" data-testid="stat-coverage">
+              <div className="text-5xl font-bold gradient-text mb-2 text-3d">50km²</div>
               <p className="text-gray-300">Coverage Per Unit</p>
             </div>
-            <div className="gradient-border rounded-lg p-6 text-center hover-lift" data-testid="stat-lifespan">
-              <div className="text-4xl font-bold gradient-text mb-2">20yr</div>
+            <div className="gradient-border rounded-xl p-6 text-center hover-lift stat-card-3d" data-testid="stat-lifespan">
+              <div className="text-5xl font-bold gradient-text mb-2 text-3d">20yr</div>
               <p className="text-gray-300">System Lifespan</p>
             </div>
           </div>
