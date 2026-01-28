@@ -103,12 +103,28 @@ async def health_check():
 @app.post("/api/contact")
 async def submit_contact(contact: ContactForm):
     try:
+        # Prepare contact data
         contact_data = contact.dict()
         contact_data["submitted_at"] = datetime.utcnow()
+        contact_data["whatsapp_sent"] = False
+        
+        # Store in database
         result = db.contacts.insert_one(contact_data)
+        
+        # Send WhatsApp notification
+        whatsapp_sent = send_whatsapp_notification(contact_data)
+        
+        # Update database with WhatsApp status
+        if whatsapp_sent:
+            db.contacts.update_one(
+                {"_id": result.inserted_id},
+                {"$set": {"whatsapp_sent": True}}
+            )
+        
         return {
             "success": True,
-            "message": "Thank you for your interest! We'll get back to you soon."
+            "message": "Thank you for your interest! We'll get back to you soon.",
+            "whatsapp_notification": "sent" if whatsapp_sent else "not_configured"
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
