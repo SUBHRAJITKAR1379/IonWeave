@@ -86,7 +86,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center pt-16" data-testid="hero-section">
+      <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 section-perspective" data-testid="hero-section">
         <div className="hero-image absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1680225695622-1c088b1db081?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwY2l0eSUyMGNsZWFuJTIwYWlyfGVufDB8fHx8MTc2OTQwNzUyMHww&ixlib=rb-4.1.0&q=85" 
@@ -94,19 +94,19 @@ function App() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" data-testid="hero-title">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center parallax-layer">
+          <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-fade-in text-3d" data-testid="hero-title">
             <span className="gradient-text">AtmosAether</span>
           </h1>
-          <p className="text-2xl md:text-3xl font-light mb-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <p className="text-2xl md:text-4xl font-light mb-4 animate-fade-in glow-effect" style={{animationDelay: '0.2s'}}>
             Ionized Atmospheric Harvester
           </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in glass-effect px-6 py-4 rounded-xl" style={{animationDelay: '0.4s'}}>
             Revolutionary technology for purifying urban atmospheres through advanced ionization and molecular filtration
           </p>
           <button 
             onClick={() => handleScroll('problem')}
-            className="bg-gradient-to-r from-accent-blue to-accent-teal text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-accent-blue/50 transition-all duration-300 animate-fade-in"
+            className="button-3d bg-gradient-to-r from-accent-blue to-accent-teal text-white px-10 py-5 rounded-xl font-semibold text-lg animate-fade-in"
             style={{animationDelay: '0.6s'}}
             data-testid="hero-cta-button"
           >
