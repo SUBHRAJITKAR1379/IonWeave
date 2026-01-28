@@ -183,33 +183,33 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 section-fade-in">
-            <div className="gradient-border rounded-xl p-8 hover-lift card-3d" data-testid="problem-card-pollution">
-              <div className="text-accent-blue text-5xl mb-4 float-animation">🏭</div>
-              <h3 className="text-2xl font-semibold mb-4 gradient-text">Urban Air Pollution Crisis</h3>
+            <div className="gradient-border rounded-xl p-8 hover-lift card-3d card-dynamic shimmer" data-testid="problem-card-pollution">
+              <div className="text-accent-blue text-5xl mb-4 float-animation icon-pulse">🏭</div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text text-glow">Urban Air Pollution Crisis</h3>
               <p className="text-gray-300 leading-relaxed">
                 Over 90% of the world's population lives in areas where air quality exceeds WHO guidelines. Urban centers face severe atmospheric degradation from industrial emissions, vehicle exhaust, and particulate matter.
               </p>
             </div>
             
-            <div className="gradient-border rounded-xl p-8 hover-lift card-3d" data-testid="problem-card-health">
-              <div className="text-accent-teal text-5xl mb-4 float-animation" style={{animationDelay: '0.5s'}}>⚕️</div>
-              <h3 className="text-2xl font-semibold mb-4 gradient-text">Health Impact</h3>
+            <div className="gradient-border rounded-xl p-8 hover-lift card-3d card-dynamic shimmer" data-testid="problem-card-health">
+              <div className="text-accent-teal text-5xl mb-4 float-animation icon-pulse" style={{animationDelay: '0.5s'}}>⚕️</div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text text-glow">Health Impact</h3>
               <p className="text-gray-300 leading-relaxed">
                 Air pollution causes 7 million premature deaths annually. Respiratory diseases, cardiovascular problems, and reduced life expectancy plague urban populations, demanding immediate innovative solutions.
               </p>
             </div>
             
-            <div className="gradient-border rounded-xl p-8 hover-lift card-3d" data-testid="problem-card-climate">
-              <div className="text-accent-blue text-5xl mb-4 float-animation" style={{animationDelay: '1s'}}>🌍</div>
-              <h3 className="text-2xl font-semibold mb-4 gradient-text">Climate Change Acceleration</h3>
+            <div className="gradient-border rounded-xl p-8 hover-lift card-3d card-dynamic shimmer" data-testid="problem-card-climate">
+              <div className="text-accent-blue text-5xl mb-4 float-animation icon-pulse" style={{animationDelay: '1s'}}>🌍</div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text text-glow">Climate Change Acceleration</h3>
               <p className="text-gray-300 leading-relaxed">
                 Traditional pollution control methods are insufficient. We need breakthrough technologies that not only filter air but actively remediate atmospheric composition at scale.
               </p>
             </div>
             
-            <div className="gradient-border rounded-xl p-8 hover-lift card-3d" data-testid="problem-card-existing">
-              <div className="text-accent-teal text-5xl mb-4 float-animation" style={{animationDelay: '1.5s'}}>⚙️</div>
-              <h3 className="text-2xl font-semibold mb-4 gradient-text">Limitations of Existing Solutions</h3>
+            <div className="gradient-border rounded-xl p-8 hover-lift card-3d card-dynamic shimmer" data-testid="problem-card-existing">
+              <div className="text-accent-teal text-5xl mb-4 float-animation icon-pulse" style={{animationDelay: '1.5s'}}>⚙️</div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text text-glow">Limitations of Existing Solutions</h3>
               <p className="text-gray-300 leading-relaxed">
                 Current air purification systems are energy-intensive, localized, and expensive. There's a critical need for scalable, efficient, and cost-effective atmospheric remediation technology.
               </p>
