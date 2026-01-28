@@ -180,16 +180,22 @@ async def submit_contact(contact: ContactForm):
 @app.post("/api/auth/session")
 async def exchange_session(session_data: SessionExchange, response: Response):
     try:
+        print(f"🔐 Received session exchange request for session_id: {session_data.session_id[:20]}...")
+        
         # Exchange session_id for user data from Emergent Auth
         auth_response = requests.get(
             "https://demobackend.emergentagent.com/auth/v1/env/oauth/session-data",
             headers={"X-Session-ID": session_data.session_id}
         )
         
+        print(f"📡 Emergent Auth response status: {auth_response.status_code}")
+        
         if auth_response.status_code != 200:
+            print(f"❌ Auth failed: {auth_response.text}")
             raise HTTPException(status_code=401, detail="Invalid session ID")
         
         user_data = auth_response.json()
+        print(f"✅ User data received: {user_data.get('email')}")
         
         # Create or update user in database
         user_id = f"user_{uuid.uuid4().hex[:12]}"
@@ -197,6 +203,7 @@ async def exchange_session(session_data: SessionExchange, response: Response):
         
         if existing_user:
             user_id = existing_user["user_id"]
+            print(f"♻️ Updating existing user: {user_id}")
             db.users.update_one(
                 {"user_id": user_id},
                 {"$set": {
@@ -206,6 +213,7 @@ async def exchange_session(session_data: SessionExchange, response: Response):
                 }}
             )
         else:
+            print(f"➕ Creating new user: {user_id}")
             db.users.insert_one({
                 "user_id": user_id,
                 "email": user_data["email"],
@@ -216,6 +224,7 @@ async def exchange_session(session_data: SessionExchange, response: Response):
         
         # Create session
         session_token = user_data["session_token"]
+        print(f"🎫 Creating session with token: {session_token[:20]}...")
         db.user_sessions.insert_one({
             "user_id": user_id,
             "session_token": session_token,
@@ -235,6 +244,8 @@ async def exchange_session(session_data: SessionExchange, response: Response):
             max_age=7*24*60*60
         )
         
+        print(f"✅ Session exchange successful for {user_data['email']}")
+        
         return {
             "success": True,
             "user": {
@@ -244,7 +255,12 @@ async def exchange_session(session_data: SessionExchange, response: Response):
                 "picture": user_data["picture"]
             }
         }
+    except HTTPException:
+        raise
     except Exception as e:
+        print(f"❌ Session exchange error: {str(e)}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/auth/me")
